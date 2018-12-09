@@ -12,3 +12,6 @@ farm.calculateLollipopsPerDay();
 setInterval(() => {
   lollipops.setNbrInStock(140)
 }, 500)
+
+//Auto-plants lollipops
+setInterval(() => {farm.plantLollipops(farm.lollipopsPerDay/72000000)})
